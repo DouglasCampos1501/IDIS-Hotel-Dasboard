@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hotel Idis - Reserva</title>
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+</head>
+
+<body>
+  <nav>
+    <div class="sidebar-top">
+      <span class="shrink-btn">
+        <i class='bx bx-chevron-left'></i>
+      </span>
+      <img src="img/logo.png" class="logo" alt="logo Hotel Idis">
+      <h3 class="hide">Hotel Idis</h3>
+    </div>
+
+    <div class="search">
+      <i class='bx bx-search'></i>
+      <input type="text" class="hide" placeholder="Buscar clientes ...">
+    </div>
+
+    <div class="sidebar-links">
+      <ul>
+        <div class=""></div>
+        <li class="tooltip-element" data-tooltip="0">
+          <a href="home.html" class="active" data-active="0">
+            <div class="icon">
+              <i class='bx bx-tachometer'></i>
+              <i class='bx bxs-tachometer'></i>
+            </div>
+            <span class="link hide"> Dashboard</span>
+          </a>
+        </li>
+        <li class="tooltip-element active-tab" data-tooltip="1">
+          <a href="reservas.html" data-active="1">
+            <div class="icon">
+              <i class='bx bx-folder'></i>
+              <i class='bx bxs-folder'></i>
+            </div>
+            <span class="link hide"> Reservas</span>
+          </a>
+        </li>
+        <li class="tooltip-element" data-tooltip="2">
+          <a href="clientes.html" data-active="2">
+            <div class="icon">
+              <i class='bx bx-message-square-detail'></i>
+              <i class='bx bxs-message-square-detail'></i>
+            </div>
+            <span class="link hide">Clientes</span>
+          </a>
+        </li>
+        <li class="tooltip-element" data-tooltip="3">
+          <a href="consumo.html" data-active="3">
+            <div class="icon">
+              <i class='bx bx-bar-chart-square'></i>
+              <i class='bx bxs-bar-chart-square'></i>
+            </div>
+            <span class="link hide">Consumo</span>
+          </a>
+        </li>
+        <li class="tooltip-element" data-tooltip="4">
+          <a href="pagamentoAdm.html" data-active="4">
+            <div class="icon">
+              <i class='bx bx-credit-card'></i>
+              <i class='bx bxs-credit-card'></i>
+            </div>
+            <span class="link hide">Pagamento</span>
+          </a>
+        </li>
+        <div class="tooltip">
+          <span class="show">Dashboard</span>
+          <span>Reservas</span>
+          <span>Clientes</span>
+          <span>Consumo</span>
+          <span>Pagamento</span>
+        </div>
+      </ul>
+      <h4 class="hide">ADMINISTRATIVO</h4>
+      <ul>
+        <li class="tooltip-element" data-tooltip="0">
+          <a href="usuarioAdm.html" data-active="5">
+            <div class="icon">
+              <i class='bx bx-notepad'></i>
+              <i class='bx bxs-notepad'></i>
+            </div>
+            <span class="link hide">Cad. Usuário</span>
+          </a>
+        </li>
+        <li class="tooltip-element" data-tooltip="1">
+          <a href="#">
+            <div class="icon">
+              <i class='bx bx-cog'></i>
+              <i class='bx bxs-cog'></i>
+            </div>
+            <span class="link hide">Admin</span>
+          </a>
+        </li>
+        <div class="tooltip">
+          <span class="show">Cad. Usuário</span>
+          <span>Admin</span>
+        </div>
+      </ul>
+    </div>
+
+    <div class="sidebar-footer">
+      <a href="#" class="account tooltip-element" data-tooltip="0">
+        <i class='bx bx-user'></i>
+      </a>
+
+      <div class="admin-user tooltip-element" data-tooltip="1">
+        <div class="admin-profile hide">
+          <img src="img/logo.png" alt="">
+          <div class="admin-info">
+            <h3>Logout</h3>
+          </div>
+        </div>
+        <a href="login.html" class="log-out">
+          <i class='bx bx-log-out'></i>
+        </a>
+      </div>
+
+      <div class="tooltip">
+        <span class="show">Logout</span>
+        <span>Logout</span>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section class="container">
+      <div class="content">
+        <h2>RESERVAS</h2>
+        <form class="reserva">
+          <h3>Data da Reserva:</h3>
+          <label>Check-in:&nbsp;<input class="quarterWidth" type="date"></label>
+          <label>Check-out:&nbsp;<input class="quarterWidth" type="date"></label>
+        </form>
+        <br>
+        <form class="reserva">
+          <h3>Dados do Cliente:</h3>
+          <input class="halfWidth" type="text" placeholder="CPF">
+          <button class="btn">&nbsp;BUSCAR&nbsp;</button>
+          <br>
+          <input class="fullWidth" type="text" placeholder="Nome do cliente" disabled>
+          <br>
+          <input class="quarterWidth" type="text" placeholder="Idioma: Português" disabled>
+        </form>
+        <br>
+        <form class="reserva">
+          <h3>Quartos:</h3>
+          <br>
+          <label for="quarto">Número de quartos</label>
+          <select class="quarterWidth" name="quarto" id="quarto">
+            <option value="1">01 - Quarto</option>
+            <option value="2">02 - Quartos</option>
+            <option value="3">03 - Quartos</option>
+            <option value="4">04 - Quartos</option>
+          </select>
+
+          <div id="quartoUm">
+            <br>
+            <label for="quartoUm">Selecione o 1º quarto que deseja</label>
+            <br>
+            <select class="quarterWidth" name="quartoUm" id="quartoUm">
+              <option value="1">Quarto n.º 01</option>
+              <option value="2">Quarto n.º 02</option>
+              <option value="3">Quarto n.º 03</option>
+              <option value="4">Quarto n.º 04</option>
+              <option value="5">Quarto n.º 05</option>
+              <option value="6">Quarto n.º 06</option>
+              <option value="7">Quarto n.º 07</option>
+              <option value="8">Quarto n.º 08</option>
+              <option value="9">Quarto n.º 09</option>
+              <option value="10">Quarto n.º 10</option>
+            </select>
+            <select class="quarterWidth" name="quartoUm" id="quartoUm">
+              <option value="1">Solteiro Simples</option>
+              <option value="2">Casal Simples</option>
+              <option value="3">Familiar</option>
+              <option value="4">Presidencial</option>
+            </select>
+          </div>
+
+          <div id="quartoDois">
+            <br>
+            <label for="quartoDois">Selecione o 2º quarto que deseja</label>
+            <br>
+            <select class="quarterWidth" name="quartoDois" id="quartoDois">
+              <option value="1">Quarto n.º 01</option>
+              <option value="2">Quarto n.º 02</option>
+              <option value="3">Quarto n.º 03</option>
+              <option value="4">Quarto n.º 04</option>
+              <option value="5">Quarto n.º 05</option>
+              <option value="6">Quarto n.º 06</option>
+              <option value="7">Quarto n.º 07</option>
+              <option value="8">Quarto n.º 08</option>
+              <option value="9">Quarto n.º 09</option>
+              <option value="10">Quarto n.º 10</option>
+            </select>
+            <select class="quarterWidth" name="quartoDois" id="quartoDois">
+              <option value="1">Solteiro Simples</option>
+              <option value="2">Casal Simples</option>
+              <option value="3">Familiar</option>
+              <option value="4">Presidencial</option>
+            </select>
+          </div>
+
+          <div id="quartoTres">
+            <br>
+            <label for="quartoTres">Selecione o 3º quarto que deseja</label>
+            <br>
+            <select class="quarterWidth" name="quartoTres" id="quartoTres">
+              <option value="1">Quarto n.º 01</option>
+              <option value="2">Quarto n.º 02</option>
+              <option value="3">Quarto n.º 03</option>
+              <option value="4">Quarto n.º 04</option>
+              <option value="5">Quarto n.º 05</option>
+              <option value="6">Quarto n.º 06</option>
+              <option value="7">Quarto n.º 07</option>
+              <option value="8">Quarto n.º 08</option>
+              <option value="9">Quarto n.º 09</option>
+              <option value="10">Quarto n.º 10</option>
+            </select>
+            <select class="quarterWidth" name="quartoTres" id="quartoTres">
+              <br>
+              <option value="1">Solteiro Simples</option>
+              <option value="2">Casal Simples</option>
+              <option value="3">Familiar</option>
+              <option value="4">Presidencial</option>
+            </select>
+          </div>
+
+          <div id="quartoQuatro">
+            <br>
+            <label for="quartoQuatro">Selecione o 4º quarto que deseja</label>
+            <br>
+            <select class="quarterWidth" name="quartoQuatro" id="quartoQuatro">
+              <option value="1">Quarto n.º 01</option>
+              <option value="2">Quarto n.º 02</option>
+              <option value="3">Quarto n.º 03</option>
+              <option value="4">Quarto n.º 04</option>
+              <option value="5">Quarto n.º 05</option>
+              <option value="6">Quarto n.º 06</option>
+              <option value="7">Quarto n.º 07</option>
+              <option value="8">Quarto n.º 08</option>
+              <option value="9">Quarto n.º 09</option>
+              <option value="10">Quarto n.º 10</option>
+            </select>
+            <select class="quarterWidth" name="quartoQuatro" id="quartoQuatro">
+              <option value="1">Solteiro Simples</option>
+              <option value="2">Casal Simples</option>
+              <option value="3">Familiar</option>
+              <option value="4">Presidencial</option>
+            </select>
+          </div>
+
+        </form>
+        <br>
+      </div>
+    </section>
+    <p class="copyright">
+      &copy; 2022 - <span>Hotel Idis</span> Desenvolvido por Douglas Campos
+    </p>
+  </main>
+
+  <script src="js/style.js"></script>
+
+
+</body>
+
+</html>

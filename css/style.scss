@@ -1,0 +1,604 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+$main-color: #b6343c;
+$main-color-dark: #851f26;
+$main-color-light: #ee4c49;
+$text-color: #fff;
+$backgound-color: white;
+$login-text-color: grey;
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ }
+
+/* --- INICIO DO CSS DO DASHBOARD --- */
+.caixaDash{
+  background-color: $main-color;
+  color: $text-color;
+  padding: 4%;
+  text-align: center;
+  font-size: 1.4em;
+  border-radius: 20px;
+  display: inline;
+  margin: 2em;
+  min-height: 8%;
+}
+
+.caixaDash:hover{
+  background-color: $main-color-dark;
+}
+
+/* --- FIM DO CSS DO DASHBOARD --- */
+
+/* --- INICIO DO CSS DO LOGIN --- */
+.boxLogin { 
+  padding:5em 0; 
+  background-color:$backgound-color;
+  width: 100%;
+}
+.boxLogin .content { padding:0.5em; }
+.login  { 
+  width:100%; 
+  overflow: hidden; 
+  margin:auto; 
+  display:inherit; 
+  background-color:$backgound-color;
+  border-radius:20px; 
+  box-shadow: 1px 0px 3px 0px #cbcbcb; 
+}
+.login h1 {  
+  text-align:center; 
+  font-size:1.5em; 
+  border-bottom:1px #e9e9e9 solid; 
+  padding:0.5em;
+  background-color: $main-color-dark;
+  color:$text-color;
+}
+.login .padding { padding:1.5em; float:left;  }
+.login label { 
+  width:100%; 
+  float:left; 
+  margin-bottom:1em; 
+}
+.login .campos { 
+  border-top:1px transparent solid; 
+  border-left:1px transparent solid; 
+  border-bottom:1px #eaeaea solid; 
+  border-right:1px transparent solid; 
+  color:$login-text-color;
+  font-size:0.9em; 
+  outline:none; 
+  padding: 0.7em 0em;
+  transition:0.4s; 
+}
+.login .campos:focus { 
+  border-top:1px transparent solid; 
+  border-left:1px transparent solid; 
+  border-bottom:1px $main-color-dark;
+  border-right:1px transparent solid; 
+  color:$main-color-dark;
+}
+.login .btn { 
+  width:auto; 
+  float:left;
+  padding:0.4em 1.3em; 
+  font-size:1em; 
+  background-color: $main-color-dark; 
+  color: $text-color;
+  border:0; 
+  border-radius:4px;
+  transition:0.4s; 
+  margin-top: 1em;
+}
+.login .btn:hover  { 
+  background-color:$main-color;
+}
+.loginText{
+  text-decoration: none;
+  color: $text-color;
+}
+.login .linkSenha { 
+  width:100%; 
+  background-color:$main-color-dark; 
+  border-top:1px #e9e9e9 solid; 
+  padding:1em 1.5em; 
+  display:inline-block;
+  transition:0.4s;
+}
+.login .linkSenha a { 
+  float:left; 
+  margin-bottom:0.5em; 
+  text-decoration:none; 
+  font-size:0.89em; 
+  color:$main-color; 
+  margin-right:10px;
+  padding-right:10px;
+  transition:0.4s ;
+  color: $text-color;
+}
+.login .linkSenha a:hover { 
+  color: $login-text-color;
+}
+
+@media (min-width:34em){
+.login  { width:40%; }
+.login .reserva { width: 100%;}
+}
+@media (min-width:48em){
+.login  { width:50%; }
+.login .linkSenha a { font-size:0.9em; }
+.login .reserva { width: 100%;}
+} 
+@media (min-width:58em){
+  .login  { width:30%; }
+  .login .linkSenha a { font-size:0.9em; }
+  .login .reserva { width: 100%;}
+  } 
+/* --- FIM DO CSS DO LOGIN --- */
+
+/* --- INICIO DO CSS RESERVAS --- */
+.reserva  { 
+  width:100%; 
+  overflow: hidden; 
+  margin:auto; 
+  display:inherit; 
+  background-color:$backgound-color;
+  border-radius:20px; 
+  box-shadow: 1px 0px 3px 0px #cbcbcb; 
+  padding: 1em 0 1em 2em;
+  margin: 0.7em 0 0.7em 0;
+}
+.reserva p, label, input, select, button { 
+  color:$login-text-color;
+  font-size:0.9em; 
+  outline:none; 
+  transition:0.4s; 
+  padding: 0.4em;
+  margin: 0.4em 0 0.4em 0;
+}
+.fullWidth{
+  width: 90%;
+}
+.halfWidth{
+  width: 45%;
+}
+.threeQuarterWidth{
+  width: 70%;
+}
+.quarterWidth{
+  width: 30%;
+}
+.minWidth{
+  width: 10%;
+}
+.btn { 
+  width:auto; 
+  padding:0.4em 1.3em; 
+  font-size:1em; 
+  background-color: $main-color-dark; 
+  color: $text-color;
+  border:0; 
+  border-radius:4px;
+  transition:0.4s; 
+  margin: 1em 0 0 1em;
+}
+
+/* --- FIM DO CSS RESERVAS --- */
+
+/* --- INICIO DO CSS PAGAMENTO --- */
+table, td, th{
+  border: 1px solid $login-text-color;
+}
+
+th, td{
+  color: $login-text-color;
+}
+
+
+/* --- FIM DO CSS PAGAMENTO --- */
+
+body{
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+  background-color: $backgound-color;
+  min-height: 100vh;
+  display: flex;
+  position: relative;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  background-color: $main-color;
+  width: 16rem;
+  padding: 1.8rem 0.85rem;
+  color: $text-color;
+  display: flex;
+  flex-direction: column;
+  transition: width 0.5s ease-in-out;
+  }
+  
+nav::before {
+  content: "";
+  position: absolute;
+  width: 2rem;
+  height: 100%;
+  top: 0;
+  left: 100%;
+}
+  
+main {
+  flex: 1;
+  padding: 2rem;
+  color: #1f2027;
+  display: flex;
+  flex-direction: column;
+}
+
+main h1 {
+  margin-bottom: 1rem;
+}
+
+main .copyright {
+  margin-top: auto;
+  font-size: 0.9rem;
+}
+
+main .copyright span {
+  color: $main-color;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.sidebar-top {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.sidebar-top .logo {
+  width: 3rem;
+  margin: 0 0.4rem;
+  border-radius: 50%;
+}
+
+.sidebar-top h3 {
+  padding-left: 0.5rem;
+  font-weight: 600;
+  font-size: 1.15rem;
+}
+
+
+.shrink-btn {
+  position: absolute;
+  top: 50%;
+  height: 27px;
+  padding: 0 0.3rem;
+  background-color: $main-color;
+  border-radius: 6px;
+  cursor: pointer;
+  box-shadow: 0 3px 10px -3px rgba(70, 46, 118, 0.3);
+  right: -2.65rem;
+  transform: translateY(-50%) translateX(-8px);
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.3s;
+}
+
+.shrink-btn i {
+  line-height: 27px;
+  transition: 0.3s;
+}
+
+.shrink-btn:hover {
+  background-color: $main-color-dark;
+}
+
+nav:hover .shrink-btn,
+.shrink-btn.hovered {
+  transform: translateY(-50%) translateX(0px);
+  opacity: 1;
+  pointer-events: all;
+}
+
+.search {
+  min-height: 2.7rem;
+  background-color: $main-color-light;
+  margin: 2rem 0.5rem 1.7rem;
+  display: grid;
+  grid-template-columns: 2.7rem 1fr;
+  align-items: center;
+  text-align: center;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.search input {
+  height: 100%;
+  border: none;
+  background: none;
+  outline: none;
+  color: $text-color;
+  caret-color: $text-color;
+  font-family: inherit;
+}
+
+.search input::placeholder {
+  color: $text-color;
+}
+
+.sidebar-links ul {
+  position: relative;
+}
+
+.sidebar-links li {
+  position: relative;
+  padding: 2.5px 0;
+}
+
+.sidebar-links a {
+  color: $text-color;
+  font-weight: 400;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  height: 53px;
+}
+
+.icon {
+  font-size: 1.3rem;
+  text-align: center;
+  min-width: 3.7rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+}
+
+.icon i {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  transition: 0.3s;
+}
+
+.icon i:last-child {
+  opacity: 0;
+  color: $text-color;
+}
+
+.sidebar-links a.active,
+.sidebar-links a:hover {
+  color: $text-color;
+}
+
+.sidebar-links a .link {
+  transition: opacity 0.3s 0.2s, color 0.3s;
+}
+
+.sidebar-links a.active i:first-child {
+  opacity: 0;
+}
+
+.sidebar-links a.active i:last-child {
+  opacity: 1;
+}
+
+.active-tab {
+  width: 100%;
+  height: 53px;
+  background-color: $main-color-dark;
+  border-radius: 10px;
+  position: absolute;
+  top: 2.5px;
+  left: 0;
+  transition: top 0.3s;
+}
+
+.sidebar-links h4 {
+  position: relative;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 0 0.8rem;
+  color: $text-color;
+  letter-spacing: 0.5px;
+  height: 45px;
+  line-height: 45px;
+  transition: opacity 0.3s 0.2s, height 0.5s 0s;
+}
+
+.sidebar-footer {
+  position: relative;
+  margin-top: auto;
+}
+
+.account {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  color: $text-color;
+  height: 53px;
+  width: 3.7rem;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s 0s, color 0.3s 0s;
+}
+
+.account:hover {
+  color: $text-color;
+}
+
+.admin-user {
+  display: flex;
+  align-items: center;
+}
+
+.admin-profile {
+  white-space: nowrap;
+  max-width: 100%;
+  transition: opacity 0.3s 0.2s, max-width 0.7s 0s ease-in-out;
+  display: flex;
+  align-items: center;
+  flex: 1;
+  overflow: hidden;
+}
+
+.admin-user img {
+  width: 2.9rem;
+  border-radius: 50%;
+  margin: 0 0.4rem;
+}
+
+.admin-info {
+  padding-left: 0.3rem;
+}
+
+.admin-info h3 {
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1;
+}
+
+.log-out {
+  display: flex;
+  height: 40px;
+  min-width: 2.4rem;
+  background-color: $main-color-dark;
+  color: $text-color;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.15rem;
+  border-radius: 10px;
+  margin: 0 0.65rem;
+  transition: color 0.3s;
+}
+
+.log-out:hover {
+  color: $text-color;
+}
+
+.tooltip {
+  background-color: $main-color;
+  position: absolute;
+  right: -1.2rem;
+  top: 0;
+  transform: translateX(100%) translateY(-50%);
+  padding: 0 0.8rem;
+  font-size: 0.85rem;
+  display: none;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr;
+  height: 30px;
+  align-items: center;
+  border-radius: 7px;
+  box-shadow: 0 3px 10px -3px rgba(70, 46, 118, 0.3);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.tooltip span {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.tooltip span.show {
+  opacity: 1;
+}
+
+.tooltip-element:hover ~ .tooltip {
+  opacity: 1;
+  pointer-events: all;
+}
+
+
+.hide {
+  transition: opacity 0.3s 0.2s;
+}
+
+body.shrink nav {
+  width: 5.4rem;
+}
+
+body.shrink .hide {
+  opacity: 0;
+  pointer-events: none;
+  transition-delay: 0s;
+}
+
+body.shrink .shrink-btn i {
+  transform: rotate(-180deg);
+}
+
+body.shrink .sidebar-links h4 {
+  height: 10px;
+}
+
+body.shrink .account {
+  opacity: 1;
+  pointer-events: all;
+  transition: opacity 0.3s 0.3s, color 0.3s 0s;
+}
+
+body.shrink .admin-profile {
+  max-width: 0;
+  transition: opacity 0.3s 0s, max-width 0.7s 0s ease-in-out;
+}
+
+body.shrink .tooltip {
+  display: grid;
+}
+
+.rotate-scale-down-ver {
+	-webkit-animation: rotate-scale-down-ver 0.65s linear 0.5s both;
+	        animation: rotate-scale-down-ver 0.65s linear 0.5s both;
+}
+
+ @-webkit-keyframes rotate-scale-down-ver {
+  0% {
+    -webkit-transform: scale(1) rotateY(0);
+            transform: scale(1) rotateY(0);
+  }
+  50% {
+    -webkit-transform: scale(0.5) rotateY(180deg);
+            transform: scale(0.5) rotateY(180deg);
+  }
+  100% {
+    -webkit-transform: scale(1) rotateY(360deg);
+            transform: scale(1) rotateY(360deg);
+  }
+}
+@keyframes rotate-scale-down-ver {
+  0% {
+    -webkit-transform: scale(1) rotateY(0);
+            transform: scale(1) rotateY(0);
+  }
+  50% {
+    -webkit-transform: scale(0.5) rotateY(180deg);
+            transform: scale(0.5) rotateY(180deg);
+  }
+  100% {
+    -webkit-transform: scale(1) rotateY(360deg);
+            transform: scale(1) rotateY(360deg);
+  }
+}
+
+

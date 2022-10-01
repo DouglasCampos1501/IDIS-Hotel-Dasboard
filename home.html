@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hotel Idis</title>
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+
+</head>
+
+<body>
+  <nav>
+    <div class="sidebar-top">
+      <span class="shrink-btn">
+        <i class='bx bx-chevron-left'></i>
+      </span>
+      <img src="img/logo.png" class="logo" alt="logo Hotel Idis">
+      <h3 class="hide">Hotel Idis</h3>
+    </div>
+
+    <div class="search">
+      <i class='bx bx-search'></i>
+      <input type="text" class="hide" placeholder="Buscar clientes ...">
+    </div>
+
+    <div class="sidebar-links">
+      <ul>
+        <div class="active-tab"></div>
+        <li class="tooltip-element" data-tooltip="0">
+          <a href="home.html" class="active" data-active="0">
+            <div class="icon">
+              <i class='bx bx-tachometer'></i>
+              <i class='bx bxs-tachometer'></i>
+            </div>
+            <span class="link hide"> Dashboard</span>
+          </a>
+        </li>
+        <li class="tooltip-element" data-tooltip="1">
+          <a href="reservas.html" data-active="1">
+            <div class="icon">
+              <i class='bx bx-folder'></i>
+              <i class='bx bxs-folder'></i>
+            </div>
+            <span class="link hide"> Reservas</span>
+          </a>
+        </li>
+        <li class="tooltip-element" data-tooltip="2">
+          <a href="clientes.html" data-active="2">
+            <div class="icon">
+              <i class='bx bx-message-square-detail'></i>
+              <i class='bx bxs-message-square-detail'></i>
+            </div>
+            <span class="link hide">Clientes</span>
+          </a>
+        </li>
+        <li class="tooltip-element" data-tooltip="3">
+          <a href="consumo.html" data-active="3">
+            <div class="icon">
+              <i class='bx bx-bar-chart-square'></i>
+              <i class='bx bxs-bar-chart-square'></i>
+            </div>
+            <span class="link hide">Consumo</span>
+          </a>
+        </li>
+        <li class="tooltip-element" data-tooltip="4">
+          <a href="pagamentoAdm.html" data-active="4">
+            <div class="icon">
+              <i class='bx bx-credit-card'></i>
+              <i class='bx bxs-credit-card'></i>
+            </div>
+            <span class="link hide">Pagamento</span>
+          </a>
+        </li>
+        <div class="tooltip">
+          <span class="show">Dashboard</span>
+          <span>Reservas</span>
+          <span>Clientes</span>
+          <span>Consumo</span>
+          <span>Pagamento</span>
+        </div>
+      </ul>
+      <h4 class="hide">ADMINISTRATIVO</h4>
+      <ul>
+        <li class="tooltip-element" data-tooltip="0">
+          <a href="usuarioAdm.html" data-active="5">
+            <div class="icon">
+              <i class='bx bx-notepad'></i>
+              <i class='bx bxs-notepad'></i>
+            </div>
+            <span class="link hide">Cad. Usuário</span>
+          </a>
+        </li>
+        <li class="tooltip-element" data-tooltip="1">
+          <a href="#">
+            <div class="icon">
+              <i class='bx bx-cog'></i>
+              <i class='bx bxs-cog'></i>
+            </div>
+            <span class="link hide">Admin</span>
+          </a>
+        </li>
+        <div class="tooltip">
+          <span class="show">Cad. Usuário</span>
+          <span>Admin</span>
+        </div>
+      </ul>
+    </div>
+
+    <div class="sidebar-footer">
+      <a href="#" class="account tooltip-element" data-tooltip="0">
+        <i class='bx bx-user'></i>
+      </a>
+
+      <div class="admin-user tooltip-element" data-tooltip="1">
+        <div class="admin-profile hide">
+          <img src="img/logo.png" alt="">
+          <div class="admin-info">
+            <h3>Logout</h3>
+          </div>
+        </div>
+        <a href="login.html" class="log-out">
+          <i class='bx bx-log-out'></i>
+        </a>
+      </div>
+
+      <div class="tooltip">
+        <span class="show">Logout</span>
+        <span>Logout</span>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <h1>Dashboard</h1>
+    <div class="w3-row">
+      <a href="reservas.html">
+        <div class="caixaDash w3-col w3-container m6 l3 s12">
+          <i class='bx bx-folder'></i>&nbsp; │ RESERVAS
+        </div>
+      </a>
+      <a href="clientes.html">
+        <div class="caixaDash w3-col w3-container m6 l3 s12">
+          <i class='bx bx-message-square-detail'></i>&nbsp; │ CLIENTES
+        </div>
+      </a>
+      <a href="consumo.html">
+        <div class="caixaDash w3-col w3-container m6 l3 s12">
+          <i class='bx bx-bar-chart-square'></i>&nbsp; │ CONSUMO
+        </div>
+      </a>
+      <a href="pagamentoAdm.html">
+        <div class="caixaDash w3-col w3-container m6 l3 s12">
+          <i class='bx bx-credit-card'></i>&nbsp; │ PAGAMENTO
+        </div>
+      </a>
+      <a href="usuarioAdm.html">
+        <div class="caixaDash w3-col w3-container m6 l3 s12">
+          <i class='bx bx-notepad'></i>&nbsp; │ CAD. USUÁRIO
+        </div>
+      </a>
+      <a href="#">
+        <div class="caixaDash w3-col w3-container m6 l3 s12">
+          <i class='bx bx-cog'></i>&nbsp; │ADMIN
+        </div>
+      </a>
+    </div>
+
+
+
+    <br>
+    <p class="copyright">
+      &copy; 2022 - <span>Hotel Idis</span> Desenvolvido por Douglas Campos
+    </p>
+  </main>
+
+  <script src="js/style.js"></script>
+
+
+</body>
+
+</html>
